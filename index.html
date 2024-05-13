@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(50, 50, 100);
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff4081;
+            animation: electricShock 1s infinite alternate;
+        }
+
+        @keyframes electricShock {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081, 0 0 70px #ff4081;
+            }
+            100% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff4081, 0 0 15px #ff4081, 0 0 20px #ff4081, 0 0 25px #ff4081, 0 0 30px #ff4081, 0 0 35px #ff4081;
+            }
+        }
+        {
+            transition: .4s;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.5s ease;
+            scale: .9;
+            transition: 0.2s;
+            transition-timing-function: ease-out;
+            opacity: 1
+        }
+        button:hover {
+            background-color: rgb(211, 45, 114) !important;
+            scale: 1.1;
+            color: black;
+            box-shadow: rgba(255, 255, 255, .5) 0 0 15px;
+        }
+
+        button:active {
+            scale: .9;
+            transition: 0.2s;
+            transition-timing-function: ease-out;
+            opacity: 1;
+        }
+
+        [before]::before {
+            content: attr(before);
+            display: inline-block;
+            transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            aspect-ratio: 1/1;
+            width: 1.5em;
+            border-radius: 69px;
+        }
+
+        [before]:hover::before,
+        button:hover img {
+            transform: translateX(-50%);
+            background-color: rgb(180, 46, 113);
+            scale: 1.2;
+            box-shadow: rgb(202, 25, 99) 0px 0px 12px;
+        }
+
+        button:hover {
+            background-color: #d80a55;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button-container {
+      position: relative;
+      top: -60px; 
+      border-radius: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HAPPY MOTHER'S DAY!</h1>
+    </div>
+    <div class="button-container">
+        <button onclick="openIndex()">SURPRISE!</button>
+      </div>
+    <script>
+        function openIndex() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section id="card">
+            <div id="cover" onclick="revealContent()">
+                <h1>Happy Mother's Day!</h1>
+                <img id="slideshow" height="150" width="200" alt="Image not to be displayed">
+            </div>
+            <div id="message" style="display: none;">
+                <h2>A Message for You</h2>
+                <p>HAPPY MOTHERS DAY MOM!! (from rajibul hossain)</p>
+                <button id="play-button">Play Song</button>
+            </div>
+        </section>
+        <footer>
+            <div id="progress-bar"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
